@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Schedule</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://wallpapercave.com/wp/wp6493574.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 2rem;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 80%;
+            margin: 2rem auto;
+            border-collapse: collapse;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            border: 1px solid white;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .home-link {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .home-link a {
+            text-decoration: none;
+            background-color: #007BFF;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-link a:hover {
+            background-color: #0056b3;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flight Schedule</h1>
+    <table>
+        <tr>
+            <th>Flight Code</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>AI101</td>
+            <td>DEL</td>
+            <td>MUM</td>
+            <td>08:00</td>
+        </tr>
+        <tr>
+            <td>6E202</td>
+            <td>BLR</td>
+            <td>DEL</td>
+            <td>09:30</td>
+        </tr>
+        <tr>
+            <td>SG303</td>
+            <td>MUM</td>
+            <td>HYD</td>
+            <td>11:00</td>
+        </tr>
+        <tr>
+            <td>UK404</td>
+            <td>CCU</td>
+            <td>BLR</td>
+            <td>13:15</td>
+        </tr>
+        <tr>
+            <td>AI505</td>
+            <td>HYD</td>
+            <td>CCU</td>
+            <td>15:45</td>
+        </tr>
+        <tr>
+            <td>6E606</td>
+            <td>MUM</td>
+            <td>DEL</td>
+            <td>17:00</td>
+        </tr>
+        <tr>
+            <td>SG707</td>
+            <td>DEL</td>
+            <td>BLR</td>
+            <td>18:30</td>
+        </tr>
+        <tr>
+            <td>UK808</td>
+            <td>BLR</td>
+            <td>HYD</td>
+            <td>20:00</td>
+        </tr>
+        <tr>
+            <td>AI909</td>
+            <td>CCU</td>
+            <td>MUM</td>
+            <td>21:45</td>
+        </tr>
+        <tr>
+            <td>6E010</td>
+            <td>HYD</td>
+            <td>DEL</td>
+            <td>23:15</td>
+        </tr>
+    </table>
+
+    <div class="home-link">
+        <a href="index.html">Back to Home</a>
+    </div>
+</body>
+
+</html>

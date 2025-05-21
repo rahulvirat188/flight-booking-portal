@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Flight</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://wallpapercave.com/wp/wp12256429.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: fadeIn 2s ease;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 0.7rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #007BFF;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form action="thankyou.html" method="GET">
+        <h1>Book Your Flight</h1>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <select name="flight" required>
+            <option value="">Select Flight</option>
+            <option value="AI101">AI101 - DEL to MUM</option>
+            <option value="6E202">6E202 - BLR to DEL</option>
+            <option value="SG303">SG303 - MUM to HYD</option>
+            <option value="UK404">UK404 - CCU to BLR</option>
+            <option value="AI505">AI505 - HYD to CCU</option>
+            <option value="6E606">6E606 - MUM to DEL</option>
+            <option value="SG707">SG707 - DEL to BLR</option>
+            <option value="UK808">UK808 - BLR to HYD</option>
+            <option value="AI909">AI909 - CCU to MUM</option>
+            <option value="6E010">6E010 - HYD to DEL</option>
+        </select>
+        <button type="submit">Book Now</button>
+    </form>
+</body>
+
+</html>
